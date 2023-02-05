@@ -1,7 +1,7 @@
 
 html { font-size: 10px;}
 body { font-size: 1rem; font-family: 'Noto Sans KR', sans-serif; }
-header { width: 100%;  position:absolute;  z-index: 100;}
+/* header { width: 100%;  position:absolute;  z-index: 100;}
 header a { color: #fff;}
 .header-conteiner { display: flex; ; max-width: 120rem; margin: 7rem auto 6rem; transition: .3s;  justify-content: center;  }
 .header-conteiner h1 a { display:block; width: 20.3rem; height: 7.5rem; background: url(../images/logo_w.png) no-repeat left bottom / auto 100%;  }
@@ -31,8 +31,8 @@ header a { color: #fff;}
 .header-conteiner > ul > li > ul > li a {position: relative;}
 .header-conteiner > ul > li > ul > li a::after { content: ''; width: 0; position: absolute; left: 0;	bottom: -.2rem;	height: .2rem;;  background: #91af96;	transition: .5s; }
 .header-conteiner > ul > li > ul > li a:hover::after { width: 100%; }
+.bg {position: absolute; top: 0; left: 0;  width: 100%; height: 0; z-index: -1; background-color: #fff; opacity: 0;} */
 
-.bg {position: absolute; top: 0; left: 0;  width: 100%; height: 0; z-index: -1; background-color: #fff; opacity: 0;}
 .scroll-ani { position: absolute; bottom: 5rem; left: 50%; transform: translateX(-50%);   color: #fff; font-size: 1.6rem;}
 .scroll-ani::after { position:absolute; content: ""; background: url(../images/arrow_back_ios_FILL0_wght100_GRAD0_opsz48.png) no-repeat 0 0 / 4rem auto; height: 5rem; width: 3rem; filter: invert(100%) sepia(0%) saturate(0%) hue-rotate(57deg) brightness(106%) contrast(101%);  bottom: -5rem; left: 2rem;; transform: rotate(-90deg); animation: scroll 1.2s linear infinite;}
 
