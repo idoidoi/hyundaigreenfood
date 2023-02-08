@@ -88,7 +88,7 @@ main { }
 .banner article:nth-child(2) { height: 100.1rem; background: url(../images/company_img.jpg) no-repeat 0 0 / cover;  }
 .banner article .company { margin: 0 auto; max-width: 120rem; height: 60rem; padding: 12.6rem 0 0; }
 .banner article .company.management {  }
-.banner article .company .h2 { display: flex; align-items: center; margin: 0 0 9.3rem;}
+.banner article .company .h2 { display: flex; align-items: left; margin: 0 0 9.3rem;}
 .banner article .company .h2 h2 { margin-right: 5rem; font-size: 6rem; font-weight: 700; color: #3e3a39; }
 .banner article .company .h2 p { font-size: 2.5rem; line-height: 4rem; color: #595757;}
 .banner article .company .h2 p span { display: block;}

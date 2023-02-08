@@ -1,14 +1,12 @@
 $(document).ready(function(){
-	// jQuery.noConflict(); // 충돌방지
 	$('.slider').not('.slick-initialized').slick({
 		centerMode: true,
 		variableWidth: true,
 		dots: true,
 		arrows: false,
 		slidesToShow: 1,
-		responsive: [ // 반응형 웹 구현 옵션
-		{  
-			breakpoint: 1022, //화면 사이즈 960px
+		responsive: [{  
+			breakpoint: 1022, 
 			settings: {
 				centerMode: false,
 				variableWidth: false,
@@ -16,8 +14,7 @@ $(document).ready(function(){
 				arrows: false,
 				slidesToShow: 2
 			} 
-		},
-		{ 
+		},{ 
 			breakpoint: 768, //화면 사이즈 768px
 			settings: {    
 				centerMode: false,
@@ -25,65 +22,46 @@ $(document).ready(function(){
 				dots: false,
 				arrows: false,
 				slidesToShow: 3
-			} 
-		}
-		]
+			}}]
 		});
-		// var mql = window.matchMedia("(min-width: 1023px)");
-		// if (mql.matches) {
-		// 	pcMod();
-		// } else {
-		// 	tebletMod();
-		// }
-		$(window).on('resize load', resize);
-
-		function resize() {
-		if( $(window).width() > 1022) {
-			pcMod();
-		} else if($(window).width() <= 1022 && $(window).width() > 778 ) { 
-			tebletMod();
-		} 
-	}; 
+		$(window).resize(function(){ 
+			let width = $(window).width()
+			if(width <= 1022 ) { 
+			 tebletMod();
+		 } else if( width > 1022) {
+				pcMod();
+			} 
+		}).resize();
+		
+});
 function pcMod(){
 	let firstMenu = $('.header-conteiner .gnb > ul '),
 					header_cnt = $('header .header-conteiner .gnb');
-					header = $('header')
-			// firstMenu.hover(function(){
-			// 	header_cnt.css({height:'auto'})
-			// 	$(".tab2 li").css({ display: 'block'})
-			// 	$('.header-conteiner h1 a').css({'filter': 'invert(36%) sepia(0%) saturate(1%) hue-rotate(96deg) brightness(94%) contrast(94%)'})
-			// 	$('.header-conteiner > ul > li').css({ 'border-color': '#595757'})
-			// 	$('header a').css({'color':'#595757'})
-			// 	$('.bg').stop().animate({height:'100%', opacity: '1'}, 200, 'swing');
-			// }, function() {
-			// 	header_cnt.css({height:'7.5rem'})
-			// 	$('.header-conteiner h1 a').css({'filter': 'none'})
-			// 	$('.header-conteiner > ul > li').css({ 'border-color': '#fff'})
-			// 	$('header a').css({'color':'#fff'})
-			// 	$('.bg').stop().animate({height:'0', opacity: '0'}, 200, 'swing');
-			// });
+			firstMenu.hover(function(){
+				header_cnt.css({height:'auto'});
+				$('.header-conteiner h1 a').css({'filter': 'invert(36%) sepia(0%) saturate(1%) hue-rotate(96deg) brightness(94%) contrast(94%)'});
+				$('.header-conteiner > ul > li').css({ 'border-color': '#595757'});
+				$('header a').css({'color':'#595757'});
+				// $('.bg').stop().animate({height:'100%', opacity: '1'}, 200, 'swing');
+				$('.bg').addClass('active');
+				$('.gnb').addClass('active');
+			}, function() {
+				header_cnt.css({height:'7.5rem'});
+				$('.header-conteiner h1 a').css({'filter': 'none'});
+				$('.header-conteiner > ul > li').css({ 'border-color': '#fff'});
+				$('header a').css({'color':'#fff'});
+				// $('.bg').stop().animate({height:'0', opacity: '0'}, 200, 'swing');
+				$('.bg').removeClass('active');
+				$('.gnb').removeClass('active');
+			});
 			$('.header-conteiner > ul > li').hover(function() {
 				$(this).find('a').css('color','#595757');
 			}, function() {
 				$(this).find('a').css('color','#fff');
 			})
-		
-			// $('.slider').not('.slick-initialized').slick({
-			// 	centerMode: true,
-			// 	variableWidth: true,
-			// 	dots: true,
-			// 	arrows: false,
-			// 	slidesToShow: 1
-			// });
-			
-		// $('.slider').on('afterChange', function(event, slick, currentSlide){
-		// 			$(".slick-active").find("figcaption").addClass('active')
-		// 			$(".slick-active").siblings().find(".active").removeClass('active')
-		// 	});
-		
 			$('.slider li').on('mousemove',function(){
-					$(".slick-active").find("div").addClass('active')
-					$(".slick-active").siblings().find(".active").removeClass('active')
+					$(".slick-active").find("div").addClass('active');
+					$(".slick-active").siblings().find(".active").removeClass('active');
 			})
 		 
 		
@@ -118,4 +96,3 @@ function tebletMod(){
  })
  
 }
-});
