@@ -61,16 +61,16 @@ main { }
 
 
 .portfolio-inner {position: relative; padding: 16rem 0 17rem; box-sizing: border-box; }
-.portfolio-inner h2 { padding-bottom: 3rem; width: 120rem; height: 7.2rem; color: #3e3a39; margin: 0 auto; font-size: 6.2rem; font-weight: 700;	line-height: 7.2rem; }
+.portfolio-inner h2 { padding-bottom: 3rem; max-width: 120rem; height: 7.2rem; color: #3e3a39; margin: 0 auto; font-size: 6.2rem; font-weight: 700;	line-height: 7.2rem; }
 .portfolio-inner > div {position: relative; height: 61.1rem; }
 .portfolio-inner .slider {  margin: 0; position: absolute; top: 15%; left: 0; opacity: 0; width: 100%; transition: .5s;}
 .portfolio-inner .slider.active { top:0; opacity: 1;}
 .portfolio-inner .slider li { margin-right: 2rem;  }
 .portfolio-inner .slider li a {  display: block; position: relative; height: 61.1rem; width: 100.1rem;  }
-.portfolio-inner .slider li div { position: absolute; opacity: 0; left: 5.5rem; top: 15.9rem; transition: .7s; padding: 6.5rem 2.5rem 2.5rem; border: 1px solid #d6d6d4; box-sizing: border-box; width: 27rem; height: 37rem; background-color: #fff;}
+.portfolio-inner .slider li div { position: absolute; opacity: 0; left: 5.5rem; top: 15.9rem; transition: .5s; padding: 6.5rem 2.5rem 2.5rem; border: 1px solid #d6d6d4; box-sizing: border-box; width: 27rem; height: 37rem; background-color: #fff;}
 .portfolio-inner .slider li div.active { top: 8.9rem; opacity: 1;}
 .portfolio-inner .slider li div h3 { font-size: 1.3rem; line-height: 1.56rem; color: #898989; font-weight: 400; margin: 0}
-.portfolio-inner .slider li div h3 span {display: block; font-size: 3rem; line-height: 3.6rem; margin: 1.5rem 0 2.5rem; font-weight: 700; color: #595757; }
+.portfolio-inner .slider li div h3 strong {display: block; font-size: 3rem; line-height: 3.6rem; margin: 1.5rem 0 2.5rem; font-weight: 700; color: #595757; }
 .portfolio-inner .slider li div p { font-size: 1.7rem; line-height: 2.55rem; color:#595757; margin-bottom: 6.6rem;}
 .portfolio-inner .slider li div > span { display: inline-block; position: relative; width: 10rem; font-size: 1.4rem; line-height: 1.68rem; color: #91af96;}
 .portfolio-inner .slider li div > span::after { position: absolute; right: 2.2rem; bottom: -.1rem; content: '\e5e1'; font-size: 13px;   font-family: 'Material Icons'; transition: .2s; }
@@ -86,7 +86,7 @@ main { }
 .banner article ~ article { margin-top: 2.5rem;}
 .banner article:nth-child(1) { background: url(../images/esg_img.jpg) no-repeat 0 0 / cover; }
 .banner article:nth-child(2) { height: 100.1rem; background: url(../images/company_img.jpg) no-repeat 0 0 / cover;  }
-.banner article .company { margin: 0 auto; width: 120rem; height: 60rem; padding: 12.6rem 0 0; }
+.banner article .company { margin: 0 auto; max-width: 120rem; height: 60rem; padding: 12.6rem 0 0; }
 .banner article .company.management {  }
 .banner article .company .h2 { display: flex; align-items: center; margin: 0 0 9.3rem;}
 .banner article .company .h2 h2 { margin-right: 5rem; font-size: 6rem; font-weight: 700; color: #3e3a39; }
@@ -101,7 +101,7 @@ main { }
 
 
 .policy { background-color: #54867e;}
-.policy-inner { width: 120rem; height: 8rem; margin: 0 auto; display: flex; align-items: center;  justify-content: space-between;}
+.policy-inner { max-width: 120rem; height: 8rem; margin: 0 auto; display: flex; align-items: center;  justify-content: space-between;}
 .policy-inner ul { display: flex; }
 .policy-inner ul li {line-height: 2rem; }
 .policy-inner ul:nth-child(1) li ~ li { padding-left: 3.5rem;}  
@@ -111,11 +111,12 @@ main { }
 .policy-inner ul li a span { position: absolute; left: .7rem;; top: -.2rem }
 
 .sitemap { border-bottom: 1px solid #e2dddd;}
-.sitemap-inner { width: 120rem; height: 30.1rem; margin: 0 auto; padding: 6.5rem 0 9.1rem; }
+.sitemap-inner { max-width: 120rem; height: 30.1rem; margin: 0 auto; padding: 6.5rem 0 9.1rem; }
 .sitemap-inner > div { display: flex; justify-content: space-between; }
 .sitemap-inner > div .go { display: flex; }
 .sitemap-inner > div .go > div {  display: flex; flex-direction: column-reverse; position: relative; }
 .sitemap-inner > div .go > div ~ div { margin-left: .5rem;}
+.sitemap-inner > div .go > div input { display: none;}
 .sitemap-inner > div .go > div label {  display: inline-block; min-width: 20.9rem; height: 4.2rem; line-height: 3.9rem; font-size: 1.8rem; font-weight: 500; color: #888; border: 1px solid #e3e3e3; padding-left: 2rem; box-sizing: border-box; background-color: #fff; text-align: left; cursor: pointer;}
 .sitemap-inner > div .go label::after { display: inline-block; position: absolute; height: 4.2rem; width: 2rem;  content:""; background: url(../images/family_arrow.png) no-repeat right center / .7rem auto;}
 .sitemap-inner > div .go input:checked ~ label { color: #53867e; border-color: #78928e;}
@@ -132,7 +133,7 @@ main { }
 .sitemap-inner .introduce ul li { margin-left: 3.4rem; font-size: 1.8rem; }
 .sitemap-inner .introduce h3 { font-size: 1.8rem; font-weight: 500; }
 
-.address-inner {  width: 120rem; margin: 3.5rem auto 5rem;}
+.address-inner {  max-width: 120rem; margin: 3.5rem auto 5rem;}
 .address-inner p { font-size: 1.4rem; line-height: 2.8rem;}
 
 .material-symbols-outlined {font-size: 5rem;position: absolute; top: 4.5rem; right: 0; transition: .2s; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200,  'opsz' 48;}
