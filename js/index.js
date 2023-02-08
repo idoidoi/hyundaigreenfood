@@ -6,12 +6,13 @@ $(document).ready(function(){
 		arrows: false,
 		slidesToShow: 1,
 		responsive: [{  
-			breakpoint: 1022, 
+			breakpoint: 1023, 
 			settings: {
 				centerMode: false,
 				variableWidth: false,
 				dots: false,
 				arrows: false,
+				centerPadding: '10px',
 				slidesToShow: 2
 			} 
 		},{ 
@@ -28,12 +29,14 @@ $(document).ready(function(){
 			let width = $(window).width()
 			if(width <= 1022 ) { 
 			 tebletMod();
-		 } else if( width > 1022) {
+		 }else if( width > 1022) {
 				pcMod();
 			} 
+			if(width == 1022){
+				location.reload();
+			}
 		}).resize();
-		
-});
+	
 function pcMod(){
 	let firstMenu = $('.header-conteiner .gnb > ul '),
 					header_cnt = $('header .header-conteiner .gnb');
@@ -94,5 +97,5 @@ function tebletMod(){
 	 $(this).siblings('ul').addClass('active');
 	 $(this).parent().siblings().children('ul').removeClass('active')
  })
- 
 }
+});

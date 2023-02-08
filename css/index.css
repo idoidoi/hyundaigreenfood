@@ -65,7 +65,7 @@ main { }
 .portfolio-inner > div {position: relative; height: 61.1rem; }
 .portfolio-inner .slider {  margin: 0; position: absolute; top: 15%; left: 0; opacity: 0; width: 100%; transition: .5s;}
 .portfolio-inner .slider.active { top:0; opacity: 1;}
-.portfolio-inner .slider li { margin-right: 2rem;  }
+.portfolio-inner .slider li { margin-right: 2rem; margin: 0; }
 .portfolio-inner .slider li a {  display: block; position: relative; height: 61.1rem; width: 100.1rem;  }
 .portfolio-inner .slider li div { position: absolute; opacity: 0; left: 5.5rem; top: 15.9rem; transition: .5s; padding: 6.5rem 2.5rem 2.5rem; border: 1px solid #d6d6d4; box-sizing: border-box; width: 27rem; height: 37rem; background-color: #fff;}
 .portfolio-inner .slider li div.active { top: 8.9rem; opacity: 1;}

@@ -21,6 +21,9 @@ header a { color: #000;}
 .header-conteiner > ul {display: none;}
 
 
+.main-screen .main-word span {display:block; width:100%; }
+
+
 .container { display:block; position: absolute; top: 3rem; right: 2rem; z-index: 100;}
 input[id=trigger] { visibility: hidden;}
 label[for=trigger] { width: 40px; height: 30px; display: block; position: relative; cursor: pointer;}
@@ -37,14 +40,13 @@ input[id=trigger]:checked { }
 /* 다음부터는 태그에 클래스 선언 무조건 해서 복잡하게 만들지 말아야지 */
 
 
-.portfolio-inner { position: relative; padding: 5rem 0 10rem 2rem; box-sizing: border-box; }
+.portfolio-inner { position: relative; padding: 5rem 0 10rem ; box-sizing: border-box; }
 .portfolio-inner h2 { padding-bottom: 3rem; max-width: 120rem; height: 7.2rem; color: #3e3a39; margin: 0 auto; font-size: 4.8rem; font-weight: 700;	line-height: 7.2rem; }
-.portfolio-inner .slider-wrap {position: relative; height: auto; margin-left: 0;}
+.portfolio-inner .slider-wrap {position: relative; height: auto; padding: 0 2rem}
 .portfolio-inner .slider {  margin: 0 ; position: static;  opacity: 1; width: 100%; transition: .5s; }
-.portfolio-inner .slider li { margin-right: 0; }
-.slick-slide { width: calc( 100% - 2.5rem); }
-.portfolio-inner .slider li a {  display: block; position: static; height: auto; width: calc( 100% - 2.5rem);  }
-.portfolio-inner .slider li div { position: static; opacity: 1; transition: none; width: 100%; padding: 2.1rem 2.1rem 5.3rem 2.1rem; border: 1px solid #d6d6d4; box-sizing: border-box;  height: auto; background-color: #fff;}
+.portfolio-inner .slider li { margin: 0;  padding-right: 1rem;}
+.portfolio-inner .slider li a {  display: block; position: static; height: auto; width: 100% }
+.portfolio-inner .slider li div { position: static; opacity: 1; transition: none; width: 100%; min-height: 17.8rem; padding: 2.1rem 2.1rem 0 2.1rem; border: 1px solid #d6d6d4; box-sizing: border-box;  height: auto; background-color: #fff;}
 .portfolio-inner .slider li div h3 { display: inline-block; position:relative; font-size: 1.3rem; line-height: 1.56rem; color: #898989; font-weight: 400; margin-bottom: 1.5rem;}
 .portfolio-inner .slider li div h3:after {position:absolute; content: ''; right: -2rem; bottom:.5rem; width: 3rem; height: 2rem; background: url(../images/arrow_back_ios_FILL0_wght100_GRAD0_opsz48.png) no-repeat center / 100% auto; transform: rotate(180deg) }
 .portfolio-inner .slider li div h3 span { display: none;}
@@ -53,14 +55,14 @@ input[id=trigger]:checked { }
 .portfolio-inner .slider li div > span { display: none; }
 .portfolio-inner .slider li div > span::after { position: absolute; right: 2.2rem; bottom: -.1rem; content: '\e5e1'; font-size: 13px;   font-family: 'Material Icons'; transition: .2s; }
 .portfolio-inner .slider li a:hover div > span::after { right: 1.7rem;}
-.portfolio-inner .slider img { height: auto; width: 100%; object-fit: cover;}
+.portfolio-inner .slider img { height: auto; max-width: 100%; }
 
 
 .banner article { height: auto; width: 100%;}
 .banner article ~ article { margin-top: 2.5rem;}
 .banner article .company { margin: 0 auto; max-width: 120rem; height: 60rem; padding: 6rem 0 0 2rem; }
 .banner article:nth-child(1) { background: url(../images/esg_img.jpg) no-repeat 0 0 / cover; }
-.banner article:nth-child(2) { height: 100.1rem; background: url(../images/company_img.jpg) no-repeat 0 0 / cover;  }
+.banner article:nth-child(2) { height: auto; background: url(../images/company_img.jpg) no-repeat 0 0 / cover;  }
 .banner article .company.management {  }
 .banner article .company .h2 { display: flex; flex-direction: column; justify-content: flex-start;  width: 100%; margin: 0;}
 .banner article .company .h2 h2 {text-align: left; margin-right: 0; font-size: 4.8rem; font-weight: 700; color: #3e3a39; margin-bottom: 2rem; }
@@ -75,4 +77,17 @@ input[id=trigger]:checked { }
 
 .material-symbols-outlined {font-size: 5rem;position: absolute; transform: rotate(-45deg); top: 40%; right: -.7rem;transition: .2s; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200,  'opsz' 48;}
 .material-symbols-outlined.second{ top: 1%; right: -.6rem; opacity: 1; }
+
+
+
+.policy { background-color: #54867e; height: 1rem;}
+.policy-inner { display: none}
+
+.sitemap { border-bottom: none;}
+.sitemap-inner { padding: 4rem 2rem 0;height: auto; }
+
+.sitemap-inner .introduce { display:none;}
+
+.address-inner {   margin: 2.5rem 2rem 5rem;}
+.address-inner p { font-size: 1.6rem; line-height: 2.8rem;}
 
