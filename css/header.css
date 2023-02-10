@@ -6,7 +6,7 @@ header a { color: #fff;}
 .header-conteiner .gnb > ul { display: flex; justify-content: space-between; margin-top: 1.5rem;}
 .header-conteiner .gnb > ul li { text-align: center; font-size: 1.9rem; font-weight: 600; letter-spacing: -.1rem;}
 .header-conteiner .gnb > ul li a { display: block; width: 100%; min-width: 9.7rem; height: 3.4rem; line-height: 3.4rem; } 
-.header-conteiner .gnb > ul > li > ul { margin-top: 2.5rem; opacity:0; transition: .5s;  }
+.header-conteiner .gnb > ul > li > ul { margin-top: 2.5rem; opacity:0; transition: .2s;  }
 .header-conteiner .gnb.active > ul > li > ul{opacity: 1;}
 .header-conteiner .gnb > ul > li > ul li ~ li { margin-top: 2.5rem; }
 

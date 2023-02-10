@@ -25,6 +25,20 @@ $(document).ready(function(){
 				slidesToShow: 3
 			}}]
 		});
+		// if(matchMedia("screen and (max-width: 767px)").matches){ 
+		// 	//화면 크기가 767px이하일때
+		// 	console.log("mobile");
+		// }else if(matchMedia("(min-width: 767px) and (max-width: 1022px)").matches){
+		// 	tebletMod();
+		// 	console.log("tablet");
+		// }else if(matchMedia("(min-width: 1023px)").matches){
+		// 	pcMod();
+		// 	console.log("pc");
+		// }
+		// if(width == 1022){
+		// 	console.log("reload");
+		// 	location.reload();
+		// }
 		$(window).resize(function(){ 
 			let width = $(window).width()
 			if(width <= 1022 ) { 
@@ -32,16 +46,11 @@ $(document).ready(function(){
 		 }else if( width > 1022) {
 				pcMod();
 			} 
-			if(width == 1022){
-				location.reload();
-			}
 		}).resize();
 	
-function pcMod(){
-	let firstMenu = $('.header-conteiner .gnb > ul '),
-					header_cnt = $('header .header-conteiner .gnb');
-			firstMenu.hover(function(){
-				header_cnt.css({height:'auto'});
+	function pcMod(){
+				$('.header-conteiner .gnb > ul ').hover(function(){
+					$('header .header-conteiner .gnb').css({height:'auto'});
 				$('.header-conteiner h1 a').css({'filter': 'invert(36%) sepia(0%) saturate(1%) hue-rotate(96deg) brightness(94%) contrast(94%)'});
 				$('.header-conteiner > ul > li').css({ 'border-color': '#595757'});
 				$('header a').css({'color':'#595757'});
@@ -49,7 +58,7 @@ function pcMod(){
 				$('.bg').addClass('active');
 				$('.gnb').addClass('active');
 			}, function() {
-				header_cnt.css({height:'7.5rem'});
+				$('header .header-conteiner .gnb').css({height:'7.5rem'});
 				$('.header-conteiner h1 a').css({'filter': 'none'});
 				$('.header-conteiner > ul > li').css({ 'border-color': '#fff'});
 				$('header a').css({'color':'#fff'});
@@ -80,7 +89,7 @@ function pcMod(){
 			this.scrollY > 2150 ? $('.news ul li:nth-child(1)').addClass('dtu') : $('.news ul li:nth-child(1)').removeClass('dtu');
 			this.scrollY > 2250 ? $('.news ul li:nth-child(2)').addClass('dtu') : $('.news ul li:nth-child(2)').removeClass('dtu');
 		});
-}
+	}
 function tebletMod(){
 	let tab = $('input[id=trigger]');
 	tab.change(function(){
@@ -93,7 +102,6 @@ function tebletMod(){
 	 }
  });
  $('.tab1 > li > a').on('click',function(){
-	 console.log('ehlsknds')
 	 $(this).siblings('ul').addClass('active');
 	 $(this).parent().siblings().children('ul').removeClass('active')
  })
