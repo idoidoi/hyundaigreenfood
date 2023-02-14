@@ -6,12 +6,12 @@ header a { color: #fff;}
 .header-conteiner .gnb > ul { display: flex; justify-content: space-between; margin-top: 1.5rem;}
 .header-conteiner .gnb > ul li { text-align: center; font-size: 1.9rem; font-weight: 600; letter-spacing: -.1rem;}
 .header-conteiner .gnb > ul li a { display: block; width: 100%; min-width: 9.7rem; height: 3.4rem; line-height: 3.4rem; } 
-.header-conteiner .gnb > ul > li > ul { margin-top: 2.5rem; opacity:0; transition: .2s;  }
-.header-conteiner .gnb.active > ul > li > ul{opacity: 1;}
+.header-conteiner .gnb > ul > li > ul { display: none;  margin-top: 2.5rem; opacity:0;  transition: .1s;  }
+.header-conteiner .gnb.active > ul > li > ul{opacity: 1; animation-delay: .2s;}
 .header-conteiner .gnb > ul > li > ul li ~ li { margin-top: 2.5rem; }
 
 .header-conteiner .gnb > ul > li > ul > li > a { position: relative; height: 2.7rem; font-size: 1.8rem; font-weight: 600;} 
-.header-conteiner .gnb > ul > li > ul > li > a::after { content: ''; width: 0; position: absolute; left: 0;	bottom: -.2rem;	height: .2rem;;  background: #91af96;	transition: .5s; }
+.header-conteiner .gnb > ul > li > ul > li > a::after { content: ''; width: 0; position: absolute; left: 0;	bottom: -.5rem;	height: .2rem;;  background: #91af96;	transition: .5s; }
 .header-conteiner .gnb > ul > li > ul > li > a:hover::after { width: 100%; }
 
 .header-conteiner > ul {display: flex; margin-left: 3.1rem;}

@@ -1,0 +1,22 @@
+header { width: 100%;  position:absolute;  z-index: 20; overflow: hidden;}
+header a { color: #000;}
+.header-conteiner { display: flex; ; width:100%; margin: 4rem 2rem 0 2rem; transition: none;  justify-content: space-between;  }
+.header-conteiner h1 a { display:block; width: 32rem; height: 4.3rem; background: url(../images/m_logo_w.png) no-repeat left bottom / auto 100%;  }
+.header-conteiner .gnb { position:fixed; top:0; right: -37rem;  padding-top: 10rem; width: 37rem; height: 100vh; margin: 0; background-color: #fff;}
+.header-conteiner .gnb::after { position: absolute; content: ''; left: 160px; top: 0; width: 1px; height: 100vh; background: #ccc; }
+.header-conteiner .gnb .tab1 { position: relative;  display: flex;  flex-direction: column; justify-content: flex-start; margin-top: 0;}
+.header-conteiner .gnb .tab1 > li { display:flex; text-align: left; padding-left: 4rem;  font-size: 2rem; font-weight: 400; letter-spacing: 0; }
+.header-conteiner .gnb .tab1 li ~ li { margin-top: 3rem;}
+.header-conteiner .gnb .tab1 > li > a {display: inline-block; width: auto;  } 
+.header-conteiner .gnb .tab1 a {text-align: left; width: auto;  min-width: auto; height: 2.4rem; line-height: 2.4rem;; } 
+.header-conteiner .gnb .tab2 { position: absolute; display: none; top: 0; left: 20rem;  margin-top: 0; opacity:1; transition: none;}
+.header-conteiner .gnb .tab2.active { display: block;}
+.header-conteiner .gnb .tab2 li {   text-align: left; height: 2.4rem; line-height: 2.4rem; opacity:1; transition: none;}
+.header-conteiner .gnb .tab2 li ~ li { margin-top: 3rem;}
+
+.header-conteiner .gnb .tab2 a {text-align: left; position: relative; height: 2.4rem; font-size: 1.8rem; color: #595757; font-weight: 500;} 
+.header-conteiner .gnb .tab2 a::after { content: ''; width: 0; position: absolute; left: 0;	bottom: -.2rem;	height: .2rem;;  background: #91af96;	transition: .5s; }
+.header-conteiner .gnb .tab2 a:hover::after { width: 100%; }
+
+.header-conteiner > ul {display: none;}
+
