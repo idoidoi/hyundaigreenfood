@@ -61,7 +61,7 @@ main { overflow-x: hidden; }
 
 
 .portfolio-inner {position: relative; padding: 16rem 0 17rem; box-sizing: border-box; }
-.portfolio-inner h2 { padding-bottom: 3rem; max-width: 120rem; height: 7.2rem; color: #3e3a39; margin: 0 auto; font-size: 6.2rem; font-weight: 700;	line-height: 7.2rem; }
+.portfolio-inner h2 { padding-bottom: 3rem; max-width: 120rem;  color: #3e3a39; margin: 0 auto; font-size: 6.2rem; font-weight: 700;	 }
 .portfolio-inner > div {position: relative; height: 61.1rem; }
 .portfolio-inner .slider {  margin: 0; position: absolute; top: 15%; left: 0; opacity: 0; width: 100%; transition: .5s;}
 .portfolio-inner .slider.active { top:0; opacity: 1;}
@@ -90,16 +90,16 @@ main { overflow-x: hidden; }
 .banner article:nth-child(2) { height: 100.1rem; background: url(../images/company_img.jpg) no-repeat 0 0 / cover;  }
 .banner article .company { margin: 0 auto; max-width: 120rem; height: 60rem; padding: 12.6rem 0 0; }
 .banner article .company.management {  }
-.banner article .company .h2 { display: flex; align-items: left; margin: 0 0 9.3rem;}
+.banner article .company .h2 { display: flex; align-items: left; margin: 0 0 7rem;}
 .banner article .company .h2 h2 { margin-right: 5rem; font-size: 6rem; font-weight: 700; color: #3e3a39; }
 .banner article .company .h2 p { font-size: 2.5rem; line-height: 4rem; color: #595757;}
 .banner article .company .h2 p span { display: block;}
-.banner article .company ul li ~ li { margin-top: 6rem;}
-.banner article .company ul li a { display:inline-block; position: relative; padding-right: 6rem; font-size: 6rem; font-weight: 700;  line-height: 6rem; color: #dcdddd;}
+.banner article .company ul li ~ li { margin-top: 3rem;}
+.banner article .company ul li a { display:inline-block; position: relative; padding-right: 6rem; font-size: 6rem; font-weight: 700; color: #dcdddd;}
 .banner article .company ul li a strong {transition: all .2s; color: #dcdddd; }
 .banner article .company ul li a:hover strong { color: #595757;  }
 .banner article .company ul li a:hover span { transform: rotate(-45deg); top: 50%; right: -.7rem; color: #595757; }
-.banner article .company ul li a:hover span.second { top: 13%; right: -.6rem; opacity: 1;}
+.banner article .company ul li a:hover span.second { top: 24%; right: -.6rem; opacity: 1;}
 
 
 .policy { background-color: #54867e;}
@@ -115,16 +115,17 @@ main { overflow-x: hidden; }
 .sitemap { border-bottom: 1px solid #e2dddd;}
 .sitemap-inner { max-width: 120rem; height: 30.1rem; margin: 0 auto; padding: 6.5rem 0 9.1rem; }
 .sitemap-inner > div { display: flex; justify-content: space-between; }
+.sitemap-inner > div h3 { display: none; }
 .sitemap-inner > div .go { display: flex; }
 .sitemap-inner > div .go > div {  display: flex; flex-direction: column-reverse; position: relative; }
 .sitemap-inner > div .go > div ~ div { margin-left: .5rem;}
 .sitemap-inner > div .go > div input { display: none;}
 .sitemap-inner > div .go > div label {  display: inline-block; min-width: 20.9rem; height: 4.2rem; line-height: 3.9rem; font-size: 1.8rem; font-weight: 500; color: #888; border: 1px solid #e3e3e3; padding-left: 2rem; box-sizing: border-box; background-color: #fff; text-align: left; cursor: pointer;}
-.sitemap-inner > div .go label::after { display: inline-block; position: absolute; height: 4.2rem; width: 2rem;  content:""; background: url(../images/family_arrow.png) no-repeat right center / .7rem auto;}
+.sitemap-inner > div .go label::after { position: absolute; height: 4.2rem; width: 2rem;  content:""; background: url(../images/family_arrow.png) no-repeat right center / .7rem auto;}
 .sitemap-inner > div .go input:checked ~ label { color: #53867e; border-color: #78928e;}
 .sitemap-inner > div .go input:checked ~ label::after { background: url(../images/family_arrow_down.png) no-repeat right center / .7rem auto;}
 .sitemap-inner > div .go input:checked ~ ul { opacity: 1; z-index: 100;}
-.sitemap-inner > div .go ul { opacity: 0; z-index: -100; position: absolute; margin-bottom: 4.2rem; border: 1px solid #78928e; border-bottom: none; background-color: #fff; min-width: 20.9rem; box-sizing: border-box;}
+.sitemap-inner > div .go ul { opacity: 0; z-index: -100; position: absolute; margin-bottom: 4.2rem; border: 1px solid #78928e; border-bottom: 0; background-color: #fff; min-width: 20.9rem; box-sizing: border-box;}
 .sitemap-inner > div .go ul li ~ li { border-top: 1px dotted #666;}
 .sitemap-inner > div .go ul li a { display: inline-block; font-size: 1.4rem; height: 3.2rem; line-height: 3rem; padding-left: 2rem;  }
 .sitemap-inner .introduce { display:flex; flex-direction: column; margin-top: 5.3rem;}
@@ -138,8 +139,8 @@ main { overflow-x: hidden; }
 .address-inner {  max-width: 120rem; margin: 3.5rem auto 5rem;}
 .address-inner p { font-size: 1.4rem; line-height: 2.8rem;}
 
-.material-symbols-outlined {font-size: 5rem;position: absolute; top: 4.5rem; right: 0; transition: .2s; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200,  'opsz' 48;}
-.material-symbols-outlined.second{ right: -1.4rem; top: 2.85rem; opacity: 0; }
+.material-symbols-outlined {font-size: 5rem;position: absolute; top: 6rem; right: 0; transition: .2s; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200,  'opsz' 48;}
+.material-symbols-outlined.second{ right: -1.4rem; top: 4rem; opacity: 0; }
 
 .dtu { animation: dtu .5s linear both; }
 .fio { animation: fio .5s linear both; }

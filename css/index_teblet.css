@@ -1,8 +1,8 @@
  header { width: 100%;  position:absolute;  z-index: 20; overflow: hidden;}
 header a { color: #000;}
-.header-conteiner { display: flex; ; width:100%; margin: 4rem 2rem 0 2rem; transition: none;  justify-content: space-between;  }
+.header-conteiner { display: flex; ; width:100%; margin: 4rem 2rem 0; transition: none;  justify-content: space-between;  }
 .header-conteiner h1 a { display:block; width: 32rem; height: 4.3rem; background: url(../images/m_logo_w.png) no-repeat left bottom / auto 100%;  }
-.header-conteiner .gnb { position:fixed; top:0; right: -37rem;  padding-top: 10rem; width: 37rem; height: 100vh; margin: 0; background-color: #fff;}
+.header-conteiner .gnb { position:fixed; top:0; right: -85%;  padding-top: 10rem; width: 37rem; height: 100vh; margin: 0; background-color: #fff;}
 .header-conteiner .gnb::after { position: absolute; content: ''; left: 160px; top: 0; width: 1px; height: 100vh; background: #ccc; }
 .header-conteiner .gnb .tab1 { position: relative;  display: flex;  flex-direction: column; justify-content: flex-start; margin-top: 0;}
 .header-conteiner .gnb .tab1 > li { display:flex; text-align: left; padding-left: 4rem;  font-size: 2rem; font-weight: 400; letter-spacing: 0; }
@@ -42,7 +42,7 @@ input[id=trigger]:checked { }
 
 
 .portfolio-inner { position: relative; padding: 5rem 0 10rem ; box-sizing: border-box; }
-.portfolio-inner h2 { padding-bottom: 3rem; max-width: 120rem; height: 7.2rem; color: #3e3a39; margin: 0 auto; font-size: 4.8rem; font-weight: 700;	line-height: 7.2rem; }
+.portfolio-inner h2 { padding: 0 0 2rem 2rem; max-width: 120rem; color: #3e3a39; margin: 0 auto; font-size: 4.8rem; font-weight: 700;	 }
 .portfolio-inner .slider-wrap {position: relative; height: auto; padding: 0 2rem}
 .portfolio-inner .slider {  margin: 0 ; position: static;  opacity: 1; width: 100%; transition: .5s; }
 .portfolio-inner .slider li { margin: 0;  padding-right: 1rem;}
@@ -67,17 +67,17 @@ input[id=trigger]:checked { }
 .banner article .company.management {  }
 .banner article .company .h2 { display: flex; flex-direction: column; justify-content: flex-start;  width: 100%; margin: 0;}
 .banner article .company .h2 h2 {text-align: left; margin-right: 0; font-size: 4.8rem; font-weight: 700; color: #3e3a39; margin-bottom: 2rem; }
-.banner article .company .h2 p { font-size: 1.7rem; line-height: 2.5rem; color: #595757; margin-bottom: 6.2rem}
+.banner article .company .h2 p { font-size: 1.7rem; line-height: 2.5rem; font-weight: 500; color: #595757; margin-bottom: 6.2rem}
 .banner article .company .h2 p span { display: block;}
 .banner article .company ul li ~ li { margin-top: 3.3rem;}
-.banner article .company ul li a { display:inline-block; position: relative; padding-right: 6rem; font-size: 4.8rem; font-weight: 700;  line-height: 6rem; color: #dcdddd;}
+.banner article .company ul li a { display:inline-block; position: relative; padding-right: 6rem; font-size: 4.8rem; font-weight: 700; color: #dcdddd;}
 .banner article .company ul li a strong {transition: all .2s; color: #dcdddd; }
 .banner article .company ul li a:hover strong { color: #595757;  }
 .banner article .company ul li a:hover span { transform: rotate(-45deg); top: 40%; right: -.7rem; color: #595757; }
-.banner article .company ul li a:hover span.second { top: 1%; right: -.6rem; opacity: 1;}
+.banner article .company ul li a:hover span.second { top: 6%; right: -.6rem; opacity: 1;}
 
 .material-symbols-outlined {font-size: 5rem;position: absolute; transform: rotate(-45deg); top: 40%; right: -.7rem;transition: .2s; font-variation-settings: 'FILL' 0, 'wght' 200, 'GRAD' 200,  'opsz' 48;}
-.material-symbols-outlined.second{ top: 1%; right: -.6rem; opacity: 1; }
+.material-symbols-outlined.second{ top: 6%; right: -.6rem; opacity: 1; }
 
 
 
